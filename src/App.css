@@ -1,0 +1,9 @@
+img {
+    -webkit-user-drag: none; /* Safari və digər webkit əsaslı brauzerlər */
+    -user-drag: none; /* Digər brauzerlər */
+  }
+  
+  /* Sağ klikdən qorumaq */
+  img {
+    pointer-events: none; /* Sağ klik qarşısını alır */
+  }
