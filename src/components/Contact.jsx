@@ -26,33 +26,33 @@ const Contact = () => {
     }
   };
 
-    const onSubmit = async (event) => {
-      event.preventDefault();
-      setResult("Sending...")
-      const formData = new FormData(event.target);
-  
-      formData.append("access_key", import.meta.env.VITE_REACT_GMAIL_API_KEY);
-  
-      const object = Object.fromEntries(formData);
-  
-      try {
-        const res = await axios.post("https://api.web3forms.com/submit", object, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-  
-        if (res.data.success) {
-          setResult("Your message has been successfully submitted!");
-          notify("Your message has been successfully submitted!");
-        } else {
-          notify("Failed to send your message. Please try again.", false);
-        }
-      } catch (error) {
-        setResult("An unexpected error occurred. Please try again later.");
-        notify(error.message || "An unexpected error occurred.", false);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending...")
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", import.meta.env.VITE_REACT_GMAIL_API_KEY);
+
+    const object = Object.fromEntries(formData);
+
+    try {
+      const res = await axios.post("https://api.web3forms.com/submit", object, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (res.data.success) {
+        setResult("Your message has been successfully submitted!");
+        notify("Your message has been successfully submitted!");
+      } else {
+        notify("Failed to send your message. Please try again.", false);
       }
-    };
+    } catch (error) {
+      setResult("An unexpected error occurred. Please try again later.");
+      notify(error.message || "An unexpected error occurred.", false);
+    }
+  };
   return (
     <section className="text-white body-font border-neutral-900">
       {/* Title */}
@@ -63,10 +63,12 @@ const Contact = () => {
         <div className="md:w-1/3 w-full">
           <h1 className="text-4xl text-white sm:text-4xl font-bold title-font mb-4">Contact Us</h1>
           <p className="leading-relaxed text-xl text-white">
-            We&lsquo;re here to assist you! If you have any questions or need assistance, please feel free to reach out to
-            us.
+          Thank you for your interest in my portfolio! If you&apos;d like to learn more
+          or discuss potential job opportunities, please feel free to complete the
+          contact form. I look forward to connecting and collaborating towards achieving
+          great results.
             <br></br>
-            You can also email us at{" "}
+            Also, you can click on my Gmail and send me an email!{" "}
             <a href="mailto:fuad.beybutov099@gmail.com"
               className="font-semibold border-b-4 border-green-400">fuad.beybutov099@gmail.com</a>
           </p>
@@ -125,7 +127,7 @@ const Contact = () => {
                 className="flex text-white bg-green-600 border-0 py-4 px-6 focus:outline-none hover:bg-green-500 active:bg-green-400 rounded text-xl font-bold shadow-lg mx-0 flex-col text-center g-recaptcha">
                 Send Message ✉
               </button>
-              <ToastContainer/>
+              <ToastContainer />
             </div>
           </form>
           <span>{result}</span>
