@@ -74,22 +74,22 @@ const Contact = () => {
             Connect with us on social media:
           </p>
           <span className="inline-flex mt-6 justify-center sm:justify-start">
-            <a className="text-white hover:text-gray-900" target="_blank" href="https://twitter.com/example">
+            <a className="text-white hover:text-gray-900" target="_blank" href="mailto:fuad.beybutov099@gmail.com">
               <SiGmail className="size-6" />
             </a>
-            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://www.instagram.com/example/"
+            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://linkedin.com/in/fuad-beybutov-05934728b"
               target="_blank">
               <FaLinkedin className="size-6 text-white" />
             </a>
-            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://www.instagram.com/example/"
+            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://github.com/Fuad2199"
               target="_blank">
               <FaGithub className="size-6 text-white" />
             </a>
-            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://www.instagram.com/example/"
+            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://wa.me/+994504993511"
               target="_blank">
               <FaWhatsapp className="size-6 text-white" />
             </a>
-            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://www.instagram.com/example/"
+            <a className="ml-3 text-gray-500 hover:text-gray-900" href="https://t.me/fuadbeybutov21"
               target="_blank">
               <FaTelegramPlane className="size-6 text-white" />
             </a>
