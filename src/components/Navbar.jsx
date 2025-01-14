@@ -1,7 +1,6 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -17,10 +16,10 @@ const Navbar = () => {
           <FaGithub />
         </a>
         <a href="https://wa.me/+994504993511" target="_blank" rel="noopener noreferrer">
-        <FaWhatsappSquare />
+        <FaWhatsapp />
         </a>
         <a href="https://t.me/fuadbeybutov21">
-        <FaTelegram />
+        <FaTelegramPlane />
         </a>
       </div>
     </nav>
